@@ -68,6 +68,9 @@ header{
     MAIN
 ================= */
 
+
+        /* LANDING */
+
 #landing{
     width: 100%;
     height: 85vh;
@@ -126,6 +129,65 @@ span .fa-long-arrow-alt-down{
 .landing-img img{
     width: 100%;
 }
+
+        /* TARIFFE */
+
+#tariffe{
+    height: 200vh;
+    width: 100%;
+    padding-top: 300px;
+}
+
+.tariffe-box{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.tariffe-box > h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+.plan-box{
+    width: 75%;
+    height: 100%;
+    margin: 100px auto;
+    font-size: 1.4em;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 10px;
+    padding: 100px;
+}
+
+.space{
+    margin-left: 100px
+}
+
+.plan-column{
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.columns{
+    width: 29%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid black;
+    vertical-align: middle
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)}
+
 
 /* =================
     MAIN
