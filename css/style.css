@@ -19,6 +19,12 @@
     clear: both;
 }
 
+.center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /* =================
     HEADER
@@ -77,7 +83,7 @@ header{
 ================= */
 
 main{
-    margin-top: 100px;
+    margin-top: 60px;
     }
 
 
@@ -163,7 +169,7 @@ span .fa-long-arrow-alt-down{
 }
 
 .plan-box{
-    width: 85%;
+    width: 100%;
     margin: 100px auto;
     font-size: 1.4em;
 }
@@ -193,7 +199,6 @@ span .fa-long-arrow-alt-down{
     display: inline-block;
     border: 1px solid black;
     vertical-align: top;
-    margin-right: 20px;
 }
 
 .columns .title{
@@ -213,7 +218,7 @@ span .fa-long-arrow-alt-down{
     vertical-align: top;
 }
 
-hr{
+.columns hr{
     width: 20%;
     margin: 40px 0
 }
@@ -266,6 +271,73 @@ hr{
 .margin > button + p{
     font-size: .6em
 }
+
+.vendite-box{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+}
+
+#vendite .titolo{
+    display: block;
+    font-size: 1.6em;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.vendite-box button{
+    position: absolute;
+    top: 30%;
+    right: 40px;
+    margin: 0;
+    font-size: 1em;
+    padding: 10px 80px;
+}
+
+.m2{
+    margin: 40px
+}
+
+#partner{
+    width: 80%;
+    margin: 100px auto;
+}
+
+.partner-img{
+    width: 50%;
+
+}
+
+.partner-img img{
+    width: 100%
+}
+
+.partner-txt{
+    width: 40%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.partner-txt h1{
+    font-size: 2.3em
+}
+
+.partner-txt button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+.partner-txt button:hover{
+    background-color: black;
+    color: white;
+}
+.m3{
+    margin: 30px 0
+}
+
 /* =================
     MAIN
 ================= */
