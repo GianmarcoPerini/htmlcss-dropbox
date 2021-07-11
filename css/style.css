@@ -398,7 +398,7 @@ ol li{
 
 .team-box{
     width: 100%;
-    height: 500px;
+    height: 430px;
     background-color: red;
     margin-top: 45px
 }
@@ -437,7 +437,7 @@ ol li{
 }
 
 .team-columns-big hr{
-    margin: 80px 0;
+    margin: 50px 0;
     width: 10%;
     color: #e3e3e3
 }
@@ -534,8 +534,26 @@ ol li{
         COLORI
     ================= */
 
+#domande{
+    width: 60%;
+    margin: 100px auto 0 auto;
+}
 
+#domande hr{
+    margin:  50px 0;
+}
 
+.dm-txt{
+    margin: 40px 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.dm-txt span{
+    margin-right: 50px;
+    font-size: 1.5em
+}
 
 /* =================
     MAIN
