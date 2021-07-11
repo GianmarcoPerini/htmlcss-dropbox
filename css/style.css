@@ -563,6 +563,92 @@ ol li{
     FOOTER
 ================= */
 
+footer{
+    width: 100%;
+    /* height: 500px; */
+    background-color: black
+}
+
+.foot-container{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    padding-top: 90px
+}
+.foot-columns{
+    margin: 30px 50px;
+    color: white;
+}
+
+.foot-columns h1{
+    margin-bottom: 40px;
+}
+
+.foot-columns p{
+    margin-top: 20px
+}
+
+.foot-columns > p:hover{
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+}
+
+#lingua {
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+#lingua > hr{
+    width: 10%;
+    margin: 80px 0 80px 50px;
+}
+
+.selector > p {
+    padding: 0 0 0 50px;
+}
+
+.selector{
+    display: inline-block;
+    position: relative;
+    padding-bottom:50px;
+}
+
+.selector-lingue{
+    position: absolute;
+    top: -200px;
+    right: 0;
+    height: 200px;
+    background-color: white;
+    display: none;
+    color: black;
+}
+
+.selector-lingue > p,
+.selector-lingue > hr{
+    margin: 12px 0 12px 0;
+    text-align: right
+}
+
+.selector-lingue > p{
+    margin: 0 30px 0 30px;
+    font-size: .8em;
+}
+
+
+.selector:hover .selector-lingue{
+    display: block;
+}
+
+.selector-lingue :first-child{
+    padding-top: 10px
+}
+
+.m5:hover {
+    color: #0061ff;
+    cursor: pointer
+}
+
 /* =================
     FOOTER
 ================= */
