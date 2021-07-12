@@ -32,11 +32,17 @@
     transform: translate(-50%, -50%);
 }
 
-
 /* =================
     HEADER
 ================= */
 
+header{
+    position: fixed;
+    top: 0;
+    z-index: 111;
+    background: white;
+    width: 100%
+}
 
 .menu{
     width: 50%;
@@ -46,45 +52,37 @@
 }
 
 .logo{
-    position: absolute;
-    top: 7px;
-    left: 0;
+    padding-top: 8px
 }
-
-
 
         /* NAV */
 
-        .no-hov{
+        .no-hov:hover{
             border-bottom: none;
-            padding: 10px 30px;
         }
 
         .gre{
             width: 70%;
         }
 
-
-
         nav ul li{
             display: inline-block;
             vertical-align: middle;
-            padding: 10px 0 35px 0;
+            padding: 10px 0 15px 0;
             margin: 0 30px;
-            border-bottom: 3px solid black;
+            border-bottom: 3px solid white;
             }
 
         nav ul li:hover{
-            color: #4089ff;
+            border-bottom: 3px solid #0061ff;
             cursor: pointer;
         }
 
         .m1{
-            /* margin-right: 60px; */
             background-color: #0061ff;
             float: right;
+            padding: 10px 15px;
             color: white;
-            /* padding: 10px 15px; */
         }
 
         .m1:hover{
@@ -106,6 +104,7 @@
     width: 100%;
     background-color: #b4d0e7;
     position: relative;
+    top: 60px
 }
 
 .landing-txt{
@@ -134,6 +133,8 @@ button{
     color: white;
     font-size: 1.2em;
     margin: 30px 0;
+    transition: all 500ms ease-in-out;
+
 }
 
 button:hover{
@@ -428,13 +429,14 @@ ol li{
     left: 0;
     height: 6px;
     background-color: black;
-    animation: change 6s linear;
+    animation: change 10s ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes change{
-    from{width: 0%}
-    to{width: 100%}
+    0% {width: 0%}
+    50% {width: 100%}
+    100% {width: 0%}
 }
 
 .team-columns-big img{
@@ -465,7 +467,8 @@ ol li{
 }
 
 .team-square img{
-    width: 60%;
+    width: 100px;
+    filter: invert(1)
 }
 
 .team-foot{
@@ -512,28 +515,56 @@ ol li{
         background-color: #61082b
     }
 
+    .magenta:hover{
+        border:10px solid #8d2e54
+    }
+
     .lightblue{
         background-color: #0093ce
+    }
+
+    .lightblue:hover{
+        border:10px solid #41b3e0
     }
 
     .red{
         background-color: red;
     }
 
+    .red:hover{
+        border:10px solid rgb(255, 85, 85)
+    }
+
     .darkred{
         background-color: #d5001f
+    }
+
+    .darkred:hover{
+        border:10px solid #d66274
     }
 
     .lilla{
         background-color: #b4d0e7
     }
 
+    .lilla:hover{
+        border:10px solid #699fcc
+    }
+
     .blue{
         background-color: blue;
     }
 
+    .blue:hover{
+        border:10px solid rgb(88, 88, 255)
+    }
+
     .yellow{
-        background-color: yellow;
+        background-color: rgb(241, 205, 0);
+    }
+
+    .yellow:hover{
+        border:10px solid rgb(255, 233, 105);
     }
     /* =================
         COLORI
@@ -542,6 +573,7 @@ ol li{
 #domande{
     width: 60%;
     margin: 100px auto 0 auto;
+    height: 700px
 }
 
 #domande hr{
@@ -560,6 +592,21 @@ ol li{
     font-size: 1.5em
 }
 
+.hidden{
+    width: 80%;
+    font-weight: normal;
+    font-size: .95em;
+    color: rgb(155, 155, 155);
+    display: none;
+} 
+
+.dm-txt:hover .hidden{
+    display: block;
+    transform: scale(1);
+    padding-top: 50px;
+
+}
+
 /* =================
     MAIN
 ================= */
@@ -571,7 +618,6 @@ ol li{
 footer{
     width: 100%;
     background-color: black;
-    margin-top: 150px
 }
 
 .foot-container{
