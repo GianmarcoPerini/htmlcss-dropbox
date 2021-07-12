@@ -36,44 +36,55 @@
 /* =================
     HEADER
 ================= */
-header{
-    width: 100%;
-    position: fixed;
-    background-color: white;
-    z-index: 1111;
-    top: 0;
-    padding-bottom: 20px
-}
+
 
 .menu{
     width: 50%;
-    height: 100%;
     display: inline-block;
+    position: relative;
+    padding-top: 20px
+}
+
+.logo{
+    position: absolute;
+    top: 7px;
+    left: 0;
 }
 
 
 
         /* NAV */
 
+        .no-hov{
+            border-bottom: none;
+            padding: 10px 30px;
+        }
+
+        .gre{
+            width: 70%;
+        }
+
+
+
         nav ul li{
             display: inline-block;
             vertical-align: middle;
-            margin-top: 20px;
-            margin-left: 7%;
-            padding:10px 15px 0 10px;
+            padding: 10px 0 35px 0;
+            margin: 0 30px;
+            border-bottom: 3px solid black;
             }
 
-            nav ul li:hover{
-                color: #4089ff;
-                cursor: pointer;
-            }
+        nav ul li:hover{
+            color: #4089ff;
+            cursor: pointer;
+        }
 
         .m1{
-            margin-right: 60px;
+            /* margin-right: 60px; */
             background-color: #0061ff;
             float: right;
             color: white;
-            padding: 10px 15px;
+            /* padding: 10px 15px; */
         }
 
         .m1:hover{
@@ -89,25 +100,17 @@ header{
     MAIN
 ================= */
 
-main{
-    margin-top: 60px;
-    }
-
-
-
         /* LANDING */
 
 #landing{
     width: 100%;
     background-color: #b4d0e7;
-    margin-top: 20px;
     position: relative;
 }
 
 .landing-txt{
     margin: 0 auto;
     width: 80%;
-    height: 100%;
     padding-top: 30px
 }
 
@@ -204,14 +207,14 @@ ol li{
     width: 29%;
     height: 100%;
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid rgb(212, 212, 212);
     vertical-align: top;
 }
 
 .columns .title{
     text-align: center;
-    border-bottom: 1px solid black;
-    padding: 40px 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding: 20px 0;
 }
 
 .fa-user-alt{
@@ -288,15 +291,17 @@ ol li{
 .vendite-box{
     width: 80%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid rgb(212, 212, 212);
     position: relative;
 }
 
 #vendite .titolo{
     display: block;
     font-size: 1.6em;
-    margin: 15px auto;
+    margin: 0 auto;
+    padding: 15px 0;
     text-align: center;
+    border-bottom: 1px solid rgb(212, 212, 212);
 }
 
 .vendite-box button{
