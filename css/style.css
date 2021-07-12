@@ -58,7 +58,7 @@ header{
         /* NAV */
 
         .no-hov:hover{
-            border-bottom: none;
+            border-bottom: 3px solid white;
         }
 
         .gre{
@@ -89,6 +89,49 @@ header{
             background-color: #4089ff;
             cursor: pointer;
             color: white;
+        }
+
+        .sub-menu{
+            position: relative;
+        }
+
+        .sub-menu-hov{
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 125%;
+            background-color: white;
+            display: none;
+        }
+
+        .small{
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            display: none;
+        }
+
+        .sub-menu hr{
+            color: #d3d3d3
+        }
+
+        .sub-menu-hov p{
+        margin: 30px 20px;
+        }
+
+        .sub-menu-hov a{
+            text-decoration: none
+        }
+
+        .sub-menu-hov a:hover{
+            text-decoration: underline
+        }
+
+
+        li:hover .sub-menu-hov{
+            display: block;
         }
 /* =================
     HEADER
