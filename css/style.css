@@ -98,8 +98,8 @@ header{
         .sub-menu-hov{
             position: absolute;
             top: 30px;
-            left: 0;
-            width: 125%;
+            right: 0;
+            width: 140%;
             background-color: white;
             display: none;
         }
@@ -717,6 +717,7 @@ footer{
     background-color: white;
     display: none;
     color: black;
+    width: 140px;
 }
 
 .selector-lingue > p,
@@ -735,15 +736,28 @@ footer{
     display: block;
 }
 
-.selector-lingue :first-child{
-    padding-top: 10px
-}
-
 .m5:hover {
     color: #0061ff;
     cursor: pointer
 }
 
+.paese{
+    width: 80%;
+    margin: 20px auto;
+}
+.paese img{
+    transform: rotate(90deg);
+    width: 20px;
+    vertical-align: middle;
+}
+
+.m5{
+    display: inline-block;
+    margin-left: 10px
+}
+
+
+
 /* =================
     FOOTER
-================= */
+================= */    
